@@ -23,6 +23,10 @@ from collections import namedtuple
 import colorama
 
 def pyinput_func():
+    """
+    Determines safe input function to use depending on 
+    Python version.
+    """
     if sys.version_info[0] >= 3:
         return input
     else:
@@ -31,16 +35,28 @@ def pyinput_func():
 inp_fn = pyinput_func()
 
 def tstring(secs):
-    h = int(int(secs) / 3600)
-    secs -= h * 3600
-    m = int(int(secs) / 60)
-    secs -= m * 60
-    return '{}h:{}m:{}s'.format(h,m,secs)
+    """
+    Given seconds, returns a string breaking the seconds down
+    into days, hours, minutes, and seconds.
+    """
+    secs_per_min = 60
+    secs_per_hour = secs_per_min * 60
+    secs_per_day = secs_per_min * secs_per_hour * 24
+    d = int(int(secs) / secs_per_day)
+    secs -= d * secs_per_day
+    h = int(int(secs) / secs_per_hour)
+    secs -= h * secs_per_hour
+    m = int(int(secs) / secs_per_min)
+    secs -= m * secs_per_min
+    return '{}:{}:{}:{}'.format(d,h,m,secs)
 
 def tnl(honor_recharge_time_secs,
         energy_recharge_time_secs,
         stam_recharge_time_secs,
         current_xp):
+    """
+    Calculate time to next level and output information to users.
+    """
     hxp_per_hit = [1,1.5,2]
     exp_per_hit = [1,1.5,2]
     sxp_per_hit = [1,3,5]
@@ -57,6 +73,7 @@ def tnl(honor_recharge_time_secs,
     avg_case_str = colorama.Fore.YELLOW + 'likely case'
 
     print()
+    print('Times given as days:hours:minutes:seconds')
     print('{} time to tnl: {}'.format(best_case_str, tstring(cases[2])))
     print('{} time to tnl: {}'.format(worst_case_str, tstring(cases[0])))
     print('{} time to tnl: about {}'.format(avg_case_str, 
