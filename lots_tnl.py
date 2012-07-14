@@ -8,12 +8,12 @@
 # it under the terms of the GNU General Public License as published
 # by the Free Software Foundation, either version 3 of the License,
 # or (at your option) any later version.
-# 
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 # General Public License for more details.
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see
 # <http://www.gnu.org/licenses/>.
@@ -24,7 +24,7 @@ import colorama
 
 def pyinput_func():
     """
-    Determines safe input function to use depending on 
+    Determines safe input function to use depending on
     Python version.
     """
     if sys.version_info[0] >= 3:
@@ -76,10 +76,10 @@ def tnl(honor_recharge_time_secs,
     print('Times given as days:hours:minutes:seconds')
     print('{} time to tnl: {}'.format(best_case_str, tstring(cases[2])))
     print('{} time to tnl: {}'.format(worst_case_str, tstring(cases[0])))
-    print('{} time to tnl: about {}'.format(avg_case_str, 
+    print('{} time to tnl: about {}'.format(avg_case_str,
                                             tstring(cases[1])))
-    print(colorama.Fore.RESET)    
-    
+    print(colorama.Fore.RESET)
+
 def print_and_read(in_str):
     """
     Output colorful text to terminal and recover
@@ -127,7 +127,7 @@ def gather_input():
         print()
         print('Goodbye.')
         quit()
-    
+
     es += 60 * em
     ss += 60 * sm
     hs += 60 * hm
@@ -139,6 +139,7 @@ if __name__ == '__main__':
     ud = gather_input()
     tnl(ud.h, ud.e, ud.s, ud.tnl)
 
+    # Attempt a graceful exit so users can read their results
     try:
         inp_fn('Press enter to continue...')
     except (EOFError):
