@@ -12,24 +12,24 @@ guess how long it'll take to level up.
 =================
 Table of Contents
 =================
-- [install][] Installation
-- [details][] Details
-- [usage][] Usage
-- [todo][] Caveats and Future Development
-- [bugs] Bug Reports and Suggestions
-- [thanks][] Thanks
+- [install][1] Installation
+- [details][2] Details
+- [usage][3] Usage
+- [todo][4] Caveats and Future Development
+- [bugs][5] Bug Reports and Suggestions
+- [thanks][6] Thanks
 
 ============
-[install] Installation
+[1] Installation
 ============
 To install this program, just download the zip archive or the source,
 and place in a directory of your choosing.
 
-Please note that you must have [Python]<http://www.python.org>
+Please note that you must have [Python](http://www.python.org)
 installed on your system to use this script.
 
 ============
-[details] Details
+[2] Details
 ============
 The following are some values critical to understanding how this
 script works:
@@ -53,7 +53,7 @@ hit. The average case assumes the expected value, and the best case
 assumes that the most experience is always given.
 
 ============
-[usage] Usage
+[3] Usage
 ============
 Either double-click the lots_tnl.py file or run it from a terminal:
 $> ./lots_tnl.py
@@ -71,7 +71,7 @@ Enter remaining experience until next level: 1000
 Press enter to continue...
 
 ============
-[todo] Caveats & Future Development
+[4] Caveats & Future Development
 ============
 This script does not take into account:
 
@@ -88,7 +88,7 @@ Future development may attempt to consider these factors and refine
 this assumption with gathered data.
 
 ===========================
-[bugs] Bug Reports and Suggestions
+[5] Bug Reports and Suggestions
 ===========================
 
 If you find any cases that crash the program, don't display corectly,
@@ -109,7 +109,7 @@ Problem:
 
 
 ============
-[thanks] Thanks
+[6] Thanks
 ============
 
 * Thanks to ClownLily for reviewing this program.
