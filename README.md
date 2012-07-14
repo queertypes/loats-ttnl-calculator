@@ -12,11 +12,11 @@ guess how long it'll take to level up.
 =================
 Table of Contents
 =================
-- [Installation][installation]
+- [Installation][install]
 - [Details][details]
 - [Usage][usage]
-- [todo][] 
-- [bugs][] 
+- [Caveats and Future Development][todo] 
+- [Bug Reports and Suggestions][bugs] 
 - [Thanks][thanks]
 
 [installation]: ./loats-ttnl-calculator#install "Installation"
@@ -36,7 +36,7 @@ Please note that you must have [Python](http://www.python.org)
 installed on your system to use this script.
 
 ============
-Details
+[Details](./loats-ttnl-calculator#details)
 ============
 The following are some values critical to understanding how this
 script works:
@@ -60,7 +60,7 @@ hit. The average case assumes the expected value, and the best case
 assumes that the most experience is always given.
 
 ============
-Usage
+[Usage](./loats-ttnl-calculator#usage)
 ============
 Either double-click the lots_tnl.py file or run it from a terminal:
 $> ./lots_tnl.py
@@ -78,7 +78,7 @@ Enter remaining experience until next level: 1000
 Press enter to continue...
 
 ============
-Caveats & Future Development
+[Caveats & Future Development](./loats-ttnl-calculator#todo)
 ============
 This script does not take into account:
 
@@ -95,7 +95,7 @@ Future development may attempt to consider these factors and refine
 this assumption with gathered data.
 
 ===========================
-Bug Reports and Suggestions
+[Bug Reports and Suggestions](./loats-ttnl-calculator#bugs)
 ===========================
 
 If you find any cases that crash the program, don't display corectly,
@@ -116,7 +116,7 @@ Problem:
 
 
 ============
-Thanks
+[Thanks](./loats-ttnl-calculator#thanks)
 ============
 
 * Thanks to ClownLily for reviewing this program.
