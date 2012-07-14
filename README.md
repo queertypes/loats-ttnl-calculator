@@ -22,8 +22,10 @@ Table of Contents
 [install]: ./loats-ttnl-calculator#installation "Installation"
 [details]: ./loats-ttnl-calculator#details "Details"
 [usage]: ./loats-ttnl-calculator#usage "Usage"
-[todo]: ./todo "Caveats and Future Development"
-[bugs]: ./loats-ttnl-calculator#bugs "Bug Reports and Suggestions"
+[todo]: ./loats-ttnl-calculator#caveats--future-development 
+        "Caveats and Future Development"
+[bugs]: ./loats-ttnl-calculator#bug-reports-and-suggestions 
+        "Bug Reports and Suggestions"
 [thanks]: ./loats-ttnl-calculator#thanks "Thanks"
 
 ============
