@@ -19,7 +19,7 @@ Table of Contents
 - [Bug Reports and Suggestions][bugs] 
 - [Thanks][thanks]
 
-[installation]: ./loats-ttnl-calculator#install "Installation"
+[install]: ./loats-ttnl-calculator#install "Installation"
 [details]: ./loats-ttnl-calculator#details "Details"
 [usage]: ./loats-ttnl-calculator#usage "Usage"
 [todo]: ./todo "Caveats and Future Development"
