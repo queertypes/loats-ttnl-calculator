@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 #
 # Copyright © Alejandro Cabrera July 2012, <cpp.cabrera@gmail.com>
 # Legacy of a Thousand Suns Time to Next Level Calculator (loats-tnl-calc)
@@ -18,7 +19,16 @@
 # <http://www.gnu.org/licenses/>.
 from __future__ import print_function
 import sys
+from collections import namedtuple
 import colorama
+
+def pyinput_func():
+    if sys.version_info[0] >= 3:
+        return input
+    else:
+        return raw_input
+
+inp_fn = pyinput_func()
 
 def tstring(secs):
     h = int(int(secs) / 3600)
@@ -42,7 +52,7 @@ def tnl(honor_recharge_time_secs,
     tot_per_sec = [sum(x) for x in (hxp_per_sec,exp_per_sec,sxp_per_sec)]
 
     cases = [int(current_xp/float(x)) for x in tot_per_sec]
-    best_case_str = colorama.Fore.GREEN + 'best case'
+    best_case_str = colorama.Fore.CYAN + 'best case'
     worst_case_str = colorama.Fore.MAGENTA + 'worst case'
     avg_case_str = colorama.Fore.YELLOW + 'likely case'
 
@@ -52,15 +62,24 @@ def tnl(honor_recharge_time_secs,
     print('{} time to tnl: about {}'.format(avg_case_str, 
                                             tstring(cases[1])))
     print(colorama.Fore.RESET)    
+    
+def print_and_read(in_str):
+    """
+    Output colorful text to terminal and recover
+    user input values as integers.
+    """
+    print(in_str, end='')
+    return int(inp_fn(''))
 
-if __name__ == '__main__':
-    colorama.init()
+def gather_input():
+    """
+    Prompts user to input stamina, energy, honor, and xp values.
+    @return A NamedTuple containing ('e','h','s','tnl')
+    """
 
-    if sys.version_info[0] == 3:
-        inp = input
-    else:
-        inp = raw_input
+    UserData = namedtuple('UserData', ['e', 'h', 's','tnl'])
 
+    # Some constants
     s_str = colorama.Fore.YELLOW + 'stamina' + colorama.Fore.RESET
     h_str = colorama.Fore.MAGENTA + 'honor' + colorama.Fore.RESET
     e_str = colorama.Fore.GREEN + 'energy' + colorama.Fore.RESET
@@ -74,33 +93,37 @@ if __name__ == '__main__':
     in_hsstr = 'Enter {} to recharge 1 {} point: '.format(sec_str, h_str)
 
     try:
-        print(in_emstr, end='')
-        em = int(inp(''))
-        print(in_esstr, end='')
-        es = int(inp(''))
-        print(in_smstr, end='')
-        sm = int(inp(''))
-        print(in_ssstr, end='')
-        ss = int(inp(''))
-        print(in_hmstr, end='')
-        hm = int(inp(''))
-        print(in_hsstr, end='')
-        hs = int(inp(''))
-        tnl_xp = int(inp('Enter remaining experience until next level: '))
+        em = print_and_read(in_emstr)
+        es = print_and_read(in_esstr)
+        sm = print_and_read(in_smstr)
+        ss = print_and_read(in_ssstr)
+        hm = print_and_read(in_hmstr)
+        hs = print_and_read(in_hsstr)
+        tnl_xp = int(inp_fn('Enter remaining experience until next level: '))
 
     except (ValueError):
         print('error: Please enter only numbers for time values.')
         print('Aborting.')
         quit()
 
+    except (KeyboardInterrupt):
+        print()
+        print('Goodbye.')
+        quit()
+    
     es += 60 * em
     ss += 60 * sm
     hs += 60 * hm
 
-    tnl(hs, es, ss, tnl_xp)
+    return UserData(e=es, s=ss, h=hs, tnl=tnl_xp)
+
+if __name__ == '__main__':
+    colorama.init()
+    ud = gather_input()
+    tnl(ud.h, ud.e, ud.s, ud.tnl)
 
     try:
-        inp('Press enter to continue...')
+        inp_fn('Press enter to continue...')
     except (EOFError):
         pass
     print()
