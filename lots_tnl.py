@@ -60,9 +60,9 @@ def tnl(honor_recharge_time_secs,
     tot_per_sec = [sum(x) for x in (hxp_per_sec,exp_per_sec,sxp_per_sec)]
 
     cases = [int(current_xp/float(x)) for x in tot_per_sec]
-    best_case_str = colorama.Fore.CYAN + 'best case'
-    worst_case_str = colorama.Fore.MAGENTA + 'worst case'
-    avg_case_str = colorama.Fore.YELLOW + 'likely case'
+    best_case_str = colorama.Fore.CYAN + 'Best case'
+    worst_case_str = colorama.Fore.MAGENTA + 'Worst case'
+    avg_case_str = colorama.Fore.YELLOW + 'Likely case'
 
     print()
     print('Times given as hours:minutes:seconds')

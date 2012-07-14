@@ -65,6 +65,7 @@ assumes that the most experience is always given.
 Usage
 ============
 Either double-click the lots_tnl.py file or run it from a terminal:
+
 $> ./lots_tnl.py
 
 Enter minutes to recharge 1 energy point: 1  
@@ -78,6 +79,8 @@ Enter remaining experience until next level: 1000
 ...
 
 Press enter to continue...
+
+[loats-ttnl-calc](./loats-ttnl-calculator/tree/master/docs/ttnl-calc.png "ttnl-calc in Action!")
 
 ============
 Caveats & Future Development
