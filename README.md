@@ -19,7 +19,7 @@ Table of Contents
 - [Bug Reports and Suggestions][bugs] 
 - [Thanks][thanks]
 
-[install]: ./loats-ttnl-calculator#install "Installation"
+[install]: ./loats-ttnl-calculator#installation "Installation"
 [details]: ./loats-ttnl-calculator#details "Details"
 [usage]: ./loats-ttnl-calculator#usage "Usage"
 [todo]: ./todo "Caveats and Future Development"
@@ -27,7 +27,7 @@ Table of Contents
 [thanks]: ./loats-ttnl-calculator#thanks "Thanks"
 
 ============
-[Installation](./loats-ttnl-calculator#install)
+Installation
 ============
 To install this program, just download the zip archive or the source,
 and place in a directory of your choosing.
@@ -36,7 +36,7 @@ Please note that you must have [Python](http://www.python.org)
 installed on your system to use this script.
 
 ============
-[Details](./loats-ttnl-calculator#details)
+Details
 ============
 The following are some values critical to understanding how this
 script works:
@@ -60,7 +60,7 @@ hit. The average case assumes the expected value, and the best case
 assumes that the most experience is always given.
 
 ============
-[Usage](./loats-ttnl-calculator#usage)
+Usage
 ============
 Either double-click the lots_tnl.py file or run it from a terminal:
 $> ./lots_tnl.py
@@ -78,7 +78,7 @@ Enter remaining experience until next level: 1000
 Press enter to continue...
 
 ============
-[Caveats & Future Development](./loats-ttnl-calculator#todo)
+Caveats & Future Development
 ============
 This script does not take into account:
 
@@ -95,7 +95,7 @@ Future development may attempt to consider these factors and refine
 this assumption with gathered data.
 
 ===========================
-[Bug Reports and Suggestions](./loats-ttnl-calculator#bugs)
+Bug Reports and Suggestions
 ===========================
 
 If you find any cases that crash the program, don't display corectly,
@@ -116,7 +116,7 @@ Problem:
 
 
 ============
-[Thanks](./loats-ttnl-calculator#thanks)
+Thanks
 ============
 
 * Thanks to ClownLily for reviewing this program.
