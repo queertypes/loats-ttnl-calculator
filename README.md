@@ -12,12 +12,12 @@ guess how long it'll take to level up.
 =================
 Table of Contents
 =================
-- [installation][]
-- [details][]
-- [usage][]
+- [Installation][installation]
+- [Details][details]
+- [Usage][usage]
 - [todo][] 
 - [bugs][] 
-- [Thanks][]
+- [Thanks][thanks]
 
 [installation]: ./loats-ttnl-calculator#install "Installation"
 [details]: ./loats-ttnl-calculator#details "Details"
