@@ -19,12 +19,12 @@ Table of Contents
 - [bugs][] 
 - [Thanks][]
 
-[installation]: #install "Installation"
-[details]: #details "Details"
-[usage]: #usage "Usage"
-[todo]: #todo "Caveats and Future Development"
-[bugs]: #bugs "Bug Reports and Suggestions"
-[thanks]: #thanks "Thanks"
+[installation]: ./install "Installation"
+[details]: ./details "Details"
+[usage]: ./usage "Usage"
+[todo]: ./todo "Caveats and Future Development"
+[bugs]: ./bugs "Bug Reports and Suggestions"
+[thanks]: ./thanks "Thanks"
 
 ============
 Installation
