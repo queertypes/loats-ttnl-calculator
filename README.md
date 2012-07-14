@@ -9,8 +9,27 @@ long it will take to level up again based upon their recharge rates
 and current experience. It uses a bit of statistics to be able to
 guess how long it'll take to level up.
 
+=================
+Table of Contents
+=================
+- [install][] Installation
+- [details][] Details
+- [usage][] Usage
+- [todo][] Caveats and Future Development
+- [bugs] Bug Reports and Suggestions
+- [thanks][] Thanks
+
 ============
-Details
+[install] Installation
+============
+To install this program, just download the zip archive or the source,
+and place in a directory of your choosing.
+
+Please note that you must have [Python]<http://www.python.org>
+installed on your system to use this script.
+
+============
+[details] Details
 ============
 The following are some values critical to understanding how this
 script works:
@@ -34,7 +53,7 @@ hit. The average case assumes the expected value, and the best case
 assumes that the most experience is always given.
 
 ============
-Usage
+[usage] Usage
 ============
 Either double-click the lots_tnl.py file or run it from a terminal:
 $> ./lots_tnl.py
@@ -52,7 +71,7 @@ Enter remaining experience until next level: 1000
 Press enter to continue...
 
 ============
-Caveats & Future Development
+[todo] Caveats & Future Development
 ============
 This script does not take into account:
 
@@ -69,7 +88,7 @@ Future development may attempt to consider these factors and refine
 this assumption with gathered data.
 
 ===========================
-Bug Reports and Suggestions
+[bugs] Bug Reports and Suggestions
 ===========================
 
 If you find any cases that crash the program, don't display corectly,
@@ -90,7 +109,7 @@ Problem:
 
 
 ============
-Thanks
+[thanks] Thanks
 ============
 
 * Thanks to ClownLily for reviewing this program.
