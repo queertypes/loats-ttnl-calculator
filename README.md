@@ -80,7 +80,10 @@ Enter remaining experience until next level: 1000
 
 Press enter to continue...
 
-[loats-ttnl-calc](http://github.com/cabrera/loats-ttnl-calculator/raw/master/docs/ttnl-calc.png)
+<img src="https://github.com/cabrera/loats-ttnl-calculator/raw/master/docs/ttnl-calc.png"
+     width="684"
+     height="321"
+     alt="ttnl-calc in action!"/>
 
 ============
 Caveats & Future Development
