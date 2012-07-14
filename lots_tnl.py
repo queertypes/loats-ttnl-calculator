@@ -90,7 +90,6 @@ def gather_input():
 
     # Some constants
     s_str = colorama.Fore.YELLOW + 'stamina' + colorama.Fore.RESET
-    h_str = colorama.Fore.MAGENTA + 'honor' + colorama.Fore.RESET
     e_str = colorama.Fore.GREEN + 'energy' + colorama.Fore.RESET
     min_str = colorama.Fore.BLUE + 'minutes' + colorama.Fore.RESET
     sec_str = colorama.Fore.CYAN + 'seconds' + colorama.Fore.RESET
@@ -98,16 +97,12 @@ def gather_input():
     in_esstr = 'Enter {} to recharge 1 {} point: '.format(sec_str, e_str)
     in_smstr = 'Enter {} to recharge 1 {} point: '.format(min_str, s_str)
     in_ssstr = 'Enter {} to recharge 1 {} point: '.format(sec_str, s_str)
-    in_hmstr = 'Enter {} to recharge 1 {} point: '.format(min_str, h_str)
-    in_hsstr = 'Enter {} to recharge 1 {} point: '.format(sec_str, h_str)
 
     try:
         em = print_and_read(in_emstr)
         es = print_and_read(in_esstr)
         sm = print_and_read(in_smstr)
         ss = print_and_read(in_ssstr)
-        hm = print_and_read(in_hmstr)
-        hs = print_and_read(in_hsstr)
         tnl_xp = int(inp_fn('Enter remaining experience until next level: '))
 
     except (ValueError):
@@ -122,9 +117,8 @@ def gather_input():
 
     es += 60 * em
     ss += 60 * sm
-    hs += 60 * hm
 
-    return UserData(e=es, s=ss, h=hs, tnl=tnl_xp)
+    return UserData(e=es, s=ss, h=120, tnl=tnl_xp)
 
 if __name__ == '__main__':
     colorama.init()
