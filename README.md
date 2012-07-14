@@ -19,12 +19,12 @@ Table of Contents
 - [bugs][] 
 - [Thanks][]
 
-[installation]: ./loats-ttnl-calc#install "Installation"
-[details]: ./loats-ttnl-calc#details "Details"
-[usage]: ./loats-ttnl-calc#usage "Usage"
+[installation]: ./loats-ttnl-calculator#install "Installation"
+[details]: ./loats-ttnl-calculator#details "Details"
+[usage]: ./loats-ttnl-calculator#usage "Usage"
 [todo]: ./todo "Caveats and Future Development"
-[bugs]: ./loats-ttnl-calc#bugs "Bug Reports and Suggestions"
-[thanks]: ./loats-ttnl-calc#thanks "Thanks"
+[bugs]: ./loats-ttnl-calculator#bugs "Bug Reports and Suggestions"
+[thanks]: ./loats-ttnl-calculator#thanks "Thanks"
 
 ============
 Installation
