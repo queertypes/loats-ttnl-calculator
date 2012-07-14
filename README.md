@@ -27,7 +27,7 @@ Table of Contents
 [thanks]: ./loats-ttnl-calculator#thanks "Thanks"
 
 ============
-Installation
+[Installation](./loats-ttnl-calculator#install)
 ============
 To install this program, just download the zip archive or the source,
 and place in a directory of your choosing.
