@@ -66,10 +66,10 @@ def tnl(honor_recharge_time_secs,
 
     print()
     print('Times given as hours:minutes:seconds')
-    print('{} time to tnl: {}'.format(best_case_str, tstring(cases[2])))
-    print('{} time to tnl: {}'.format(worst_case_str, tstring(cases[0])))
-    print('{} time to tnl: about {}'.format(avg_case_str,
-                                            tstring(cases[1])))
+    print('{} ttnl: {}'.format(best_case_str, tstring(cases[2])))
+    print('{} ttnl: {}'.format(worst_case_str, tstring(cases[0])))
+    print('{} ttnl: about {}'.format(avg_case_str,
+                                     tstring(cases[1])))
     print(colorama.Fore.RESET)
 
 def print_and_read(in_str):
