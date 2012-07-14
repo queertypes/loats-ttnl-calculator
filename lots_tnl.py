@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Author: Alejandro Cabrera, cpp.cabrera@gmail.com
-# Legacy of a Thousand Suns Time to Next Level Calculator (lots-tnl-calc)
+# Copyright © Alejandro Cabrera July 2012, <cpp.cabrera@gmail.com>
+# Legacy of a Thousand Suns Time to Next Level Calculator (loats-tnl-calc)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published
