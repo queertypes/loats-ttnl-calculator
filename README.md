@@ -12,12 +12,12 @@ guess how long it'll take to level up.
 =================
 Table of Contents
 =================
-- [install][1] Installation
-- [details][2] Details
-- [usage][3] Usage
-- [todo][4] Caveats and Future Development
-- [bugs][5] Bug Reports and Suggestions
-- [thanks][6] Thanks
+- [Installation] [1]
+- [Details] [2]
+- [Usage] [3]
+- [Caveats and Future Development] [4] 
+- [Bug Reports and Suggestions] [5] 
+- [Thanks] [6]
 
 ============
 [1] Installation
