@@ -72,7 +72,7 @@ this assumption with gathered data.
 Thanks
 ============
 
-Thanks to ClownLily for reviewing this program.
-Thanks to the author of colorama, Jonathan Hartley.
-Thanks to the creators of Legacy of a Thousand Suns for making a very
-entertaining game.
+* Thanks to ClownLily for reviewing this program.
+* Thanks to the author of colorama, Jonathan Hartley.
+* Thanks to the creators of Legacy of a Thousand Suns for making a very
+  entertaining game.
