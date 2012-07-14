@@ -19,15 +19,15 @@ Table of Contents
 - [bugs][] 
 - [Thanks][]
 
-[installation]: /install/ "Installation"
-[details]: /details/ "Details"
-[usage]: /usage/ "Usage"
-[todo]: /todo/ "Caveats and Future Development"
-[bugs]: /bugs/ "Bug Reports and Suggestions"
-[thanks]: /thanks/ "Thanks"
+[installation]: #install "Installation"
+[details]: #details "Details"
+[usage]: #usage "Usage"
+[todo]: #todo "Caveats and Future Development"
+[bugs]: #bugs "Bug Reports and Suggestions"
+[thanks]: #thanks "Thanks"
 
 ============
-[1] Installation
+Installation
 ============
 To install this program, just download the zip archive or the source,
 and place in a directory of your choosing.
@@ -36,7 +36,7 @@ Please note that you must have [Python](http://www.python.org)
 installed on your system to use this script.
 
 ============
-[2] Details
+Details
 ============
 The following are some values critical to understanding how this
 script works:
@@ -60,7 +60,7 @@ hit. The average case assumes the expected value, and the best case
 assumes that the most experience is always given.
 
 ============
-[3] Usage
+Usage
 ============
 Either double-click the lots_tnl.py file or run it from a terminal:
 $> ./lots_tnl.py
@@ -78,7 +78,7 @@ Enter remaining experience until next level: 1000
 Press enter to continue...
 
 ============
-[4] Caveats & Future Development
+Caveats & Future Development
 ============
 This script does not take into account:
 
@@ -95,7 +95,7 @@ Future development may attempt to consider these factors and refine
 this assumption with gathered data.
 
 ===========================
-[5] Bug Reports and Suggestions
+Bug Reports and Suggestions
 ===========================
 
 If you find any cases that crash the program, don't display corectly,
@@ -116,7 +116,7 @@ Problem:
 
 
 ============
-[6] Thanks
+Thanks
 ============
 
 * Thanks to ClownLily for reviewing this program.
