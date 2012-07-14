@@ -1,4 +1,4 @@
-Version: 1.0.0
+Version: 1.0.1
 
 ============
 Description
@@ -63,7 +63,7 @@ This script does not take into account:
 4. The presence of experience boosting tactics, like Take a Chance or
    PoE, including factors that might affect that like one's LSI.
 
-T he script assumes that the distribution of experience values is a normal distribution. 
+The script assumes that the distribution of experience values is a normal distribution. 
 
 Future development may attempt to consider these factors and refine
 this assumption with gathered data.
