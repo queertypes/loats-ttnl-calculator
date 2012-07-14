@@ -68,6 +68,27 @@ The script assumes that the distribution of experience values is a normal distri
 Future development may attempt to consider these factors and refine
 this assumption with gathered data.
 
+===========================
+Bug Reports and Suggestions
+===========================
+
+If you find any cases that crash the program, don't display corectly,
+or if you find that the predictions are off (especially the worst and
+best cases!), please send an email to:
+
+cpp.cabrera@gmail.com
+
+To make the fixing process faster, please use the following template:
+
+Operating system: (Linux, Mac OS, Windows)  
+Python version:  
+Expected:  
+
+Actual:  
+
+Problem:  
+
+
 ============
 Thanks
 ============
