@@ -80,7 +80,7 @@ Enter remaining experience until next level: 1000
 
 Press enter to continue...
 
-<img src="https://github.com/cabrera/loats-ttnl-calculator/raw/master/docs/ttnl-calc.png"
+<img src="https://github.com/queertypes/loats-ttnl-calculator/raw/master/docs/ttnl-calc.png"
      width="684"
      height="321"
      alt="ttnl-calc in action!"/>
@@ -110,7 +110,7 @@ If you find any cases that crash the program, don't display corectly,
 or if you find that the predictions are off (especially the worst and
 best cases!), please send an email to:
 
-cpp.cabrera@gmail.com
+allele.dev@gmail.com
 
 To make the fixing process faster, please use the following template:
 
